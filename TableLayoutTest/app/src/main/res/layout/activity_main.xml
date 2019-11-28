@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/textView4"
+        android:layout_width="match_parent"
+        android:layout_height="59dp"
+        android:gravity="center_vertical"
+        android:hint="Enter Android Version"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="45dp" />
+
+    <EditText
+        android:id="@+id/textView5"
+        android:layout_width="match_parent"
+        android:layout_height="57dp"
+        android:gravity="center_vertical"
+        android:hint="Enter Android Code Name"
+        tools:layout_editor_absoluteX="5dp"
+        tools:layout_editor_absoluteY="133dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="onAdd"
+        android:text="ADD"
+        tools:layout_editor_absoluteX="138dp"
+        tools:layout_editor_absoluteY="221dp" />
+
+    <TableLayout
+        android:id="@+id/tblDynamic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:stretchColumns="*"
+        android:orientation="vertical"
+        android:background="@color/colorAccent">
+
+        <TableRow android:padding="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Version"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Code Name"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Version 9.0"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Pie"/>
+        </TableRow>
+
+        <TableRow android:padding="5dp">
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Version 8.0"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:text="Droe"/>
+        </TableRow>
+
+    </TableLayout>
+
+
+
+</LinearLayout>
