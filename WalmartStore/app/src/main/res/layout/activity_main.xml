@@ -8,6 +8,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
+    <!-- this is a image -->
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="204dp"
@@ -23,6 +24,7 @@
         android:layout_height="30dp"
         />
 
+    <!-- Sign in to your account -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,6 +38,7 @@
         android:layout_height="40dp"
         />
 
+    <!-- this is an email address text -->
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -43,15 +46,12 @@
         android:gravity="left"
         />
 
+    <!-- edit text for email -->
     <EditText
-        android:id="@+id/editText3"
+        android:id="@+id/editEmail"
         android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:layout_marginTop="10dp"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="395dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
         />
 
     <Space
@@ -59,21 +59,22 @@
         android:layout_height="20dp"
         />
 
+    <!-- this is a password text -->
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="Password(required)"
         android:gravity="left"
         />
-    <EditText
-        android:id="@+id/editText2"
-        android:layout_width="300dp"
-        android:layout_height="50dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        tools:layout_editor_absoluteX="56dp"
-        tools:layout_editor_absoluteY="311dp" />
 
+    <!-- edit text for password -->
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <!-- this is a text for forgot password -->
     <TextView
         android:layout_width="300dp"
         android:layout_height="wrap_content"
@@ -88,6 +89,7 @@
         android:layout_height="70dp"
         />
 
+    <!-- this is a Sign in button -->
     <Button
         android:id="@+id/SignInBtn"
         android:layout_width="300dp"
@@ -95,16 +97,17 @@
         android:layout_marginTop="4dp"
         android:background="@android:color/holo_blue_dark"
         android:elevation="0dp"
+        android:onClick="setOnSingIn"
         android:text="Sign In"
         android:textAllCaps="false"
-        android:textColor="@android:color/background_light"
-        />
+        android:textColor="@android:color/background_light" />
 
     <Space
         android:layout_width="match_parent"
         android:layout_height="15dp"
         />
 
+    <!-- this is a text for Don't have an account -->
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -112,6 +115,7 @@
 
         />
 
+    <!-- this is a button of create a new account -->
     <Button
         android:id="@+id/createAcctBtn"
         android:layout_width="300dp"
@@ -119,9 +123,9 @@
         android:layout_marginTop="4dp"
         android:background="@android:color/white"
         android:elevation="0dp"
+        android:onClick="onClickNewAccount"
         android:text="Create a new account"
         android:textAllCaps="false"
-        android:textColor="@android:color/holo_blue_dark"
-        />
+        android:textColor="@android:color/holo_blue_dark" />
 
 </LinearLayout>

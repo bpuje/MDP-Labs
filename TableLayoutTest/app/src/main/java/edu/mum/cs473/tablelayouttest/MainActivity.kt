@@ -16,17 +16,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
     }
 
-//    fun myClick(view: View){
-//
-//        val v = View(this)
-//        v.layoutParams = LinearLayout.LayoutParams(
-//            ActionBar.LayoutParams.MATCH_PARENT, 10
-//        )
-//        v.setBackgroundColor(Color.parseColor("#B3B3B3"))
-//
-//        //LinearLay.addView(v)
-//    }
-
 
     fun onAdd(view: View) {
 
