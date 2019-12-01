@@ -1,5 +1,7 @@
 package edu.mum.cs473.walmartstore
 
+import android.app.Activity
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Toast
@@ -16,6 +18,7 @@ class RegisterActivity : AppCompatActivity(){
         val intent1 = intent
         msg = intent1.getStringExtra("msg")
         Toast.makeText(this, msg, Toast.LENGTH_LONG).show()
+
     }
 
     fun onClickSaveAccount(view: View){
@@ -24,10 +27,16 @@ class RegisterActivity : AppCompatActivity(){
         var email: String = editEmail.text.toString()
         var pass : String = editPassword.text.toString()
 
-        var main: MainActivity = MainActivity()
+        //var main: MainActivity = MainActivity()
 
-        main.myArray.add(User(fname, lname, email, pass))
+        var user = User(fname, lname, email, pass)
 
-        Toast.makeText(this, "Account created successfully", Toast.LENGTH_LONG).show()
+        val data = Intent()
+        data.putExtra("user", user)
+
+        setResult(Activity.RESULT_OK, data) //data.data = Uri.parse(text)
+        finish() ////---close the activity---
+
+        //Toast.makeText(this, "Account created successfully", Toast.LENGTH_LONG).show()
     }
 }

@@ -107,10 +107,13 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@color/colorPrimary"
-        android:onClick="setOnClickCategory"
+        android:background="#0BA3E9"
+        android:onClick="onClickSaveAccount"
         android:text="Create Account"
         android:textAllCaps="false"
-        android:textColor="@color/colorAccent" />
+        android:textColor="#F7F2F3"
+
+        />
+
 
 </LinearLayout>

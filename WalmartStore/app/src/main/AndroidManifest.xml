@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".ShoppingCategory"></activity>
         <activity android:name=".RegisterActivity"></activity>
+        <activity android:name=".Pass_recovery"></activity>
     </application>
 
 </manifest>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Pass_recovery">
+
+    <!-- this is a image -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="204dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/wallmart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Recovery password"
+        android:gravity="left"
+        android:textSize="26sp"
+        />
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        />
+
+    <!-- this is a password text -->
+    <TextView
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:text="Insert email address"
+        android:gravity="left"
+        />
+
+    <!-- edit text for password -->
+    <EditText
+        android:id="@+id/getEmail"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:inputType="textEmailAddress" />
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        />
+
+    <!-- this is a Sign in button -->
+    <Button
+        android:id="@+id/RecoveryBtn"
+        android:layout_width="300dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/holo_blue_dark"
+        android:onClick="onClickRecoveryBtn"
+        android:text="Recover password"
+        android:textAllCaps="false"
+        android:textColor="@android:color/background_light" />
+
+
+</LinearLayout>
