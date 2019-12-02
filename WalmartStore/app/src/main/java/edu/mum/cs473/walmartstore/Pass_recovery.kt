@@ -19,10 +19,8 @@ class Pass_recovery : AppCompatActivity() {
 
         val intentData = Intent()
         intentData.putExtra("email", email)
-
         //intentData.data= Uri.parse(text)
         setResult(Activity.RESULT_OK, intentData)
-
         finish()
     }
 

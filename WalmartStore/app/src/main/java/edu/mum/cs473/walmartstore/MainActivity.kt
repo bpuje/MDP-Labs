@@ -37,8 +37,6 @@ class MainActivity : AppCompatActivity() {
         SignInBtn.text = "Sign In"
     }
 
-
-
     fun listApp(){
         myArray.add(User("admin", "admin", "purevdemberel@gmail.com", "123"))
         myArray.add(User("John", "Doe",  "doe@gmail.com", "123"))
@@ -93,7 +91,7 @@ class MainActivity : AppCompatActivity() {
         return true
     }
 
-    //createAcctBtn
+
     fun onClickNewAccount(view: View) {
         val intent1 = Intent(this, RegisterActivity::class.java)
         intent1.putExtra("msg", "Enter the required fields")
@@ -127,7 +125,7 @@ class MainActivity : AppCompatActivity() {
                 var rPass : String? = ""
                 for (user in myArray){
                     if(user.email.equals(returnedResult)){
-                         rPass = user.password
+                        rPass = user.password
                         val intent1 = Intent()
                         intent1.action = Intent.ACTION_SEND
                         //intent1.action = Intent.ACTION_SENDTO
