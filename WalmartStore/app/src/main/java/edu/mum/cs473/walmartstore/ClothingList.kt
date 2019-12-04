@@ -31,7 +31,7 @@ class ClothingList : AppCompatActivity() {
         lview.onItemClickListener = AdapterView.OnItemClickListener{parent, view, position, id ->
             val item = parent.getItemAtPosition(position).toString()
             val intent1 = Intent(applicationContext, ClothingDetails::class.java)
-            intent1.putExtra("image", clothes[position])
+            intent1.putExtra("image", images[position])
             startActivity(intent1)
         }
     }
