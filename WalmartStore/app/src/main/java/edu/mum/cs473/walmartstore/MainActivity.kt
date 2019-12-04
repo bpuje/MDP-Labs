@@ -35,6 +35,8 @@ class MainActivity : AppCompatActivity() {
 
         editPassword.transformationMethod = PasswordTransformationMethod.getInstance()
         SignInBtn.text = "Sign In"
+
+        //SignInBtn.setOnClickListener()
     }
 
     fun listApp(){
@@ -43,6 +45,7 @@ class MainActivity : AppCompatActivity() {
         myArray.add(User("Nat", "Marley", "marley@gmail.com", "123"))
         myArray.add(User("Bob", "Smith", "smith@gmail.com", "123"))
         myArray.add(User("Stella", "Delgado", "stella@gmail.com", "123"))
+        myArray.add(User("a", "a", "a", "a"))
     }
 
     fun setOnSingIn(view: View){

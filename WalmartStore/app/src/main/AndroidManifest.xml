@@ -19,6 +19,8 @@
         <activity android:name=".ShoppingCategory"></activity>
         <activity android:name=".RegisterActivity"></activity>
         <activity android:name=".Pass_recovery"></activity>
+        <activity android:name=".ClothingDetails"></activity>
+        <activity android:name=".ClothingList"></activity>
     </application>
 
 </manifest>
