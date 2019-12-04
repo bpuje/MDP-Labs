@@ -45,7 +45,7 @@
                     android:layout_height="100dp"
                     android:src="@drawable/electron"
                     android:layout_gravity="center"
-                    android:onClick="setOnClickCategory"
+                    android:onClick="setOnClictElect" />
                     />
                 <TextView
                     android:layout_width="match_parent"

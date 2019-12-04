@@ -1,3 +1,39 @@
 <resources>
     <string name="app_name">WalmartStore</string>
+    <array name="elect">
+        <item>MacBookPro</item>
+        <item>Note10</item>
+        <item>Tablet</item>
+        <item>TV</item>
+        <item>Printer</item>
+
+    </array>
+    <array name="desc">
+        <item>High amount of fiber, vitamin C, potassium and vitamin K.</item>
+        <item>Rich in vitamins and minerals</item>
+        <item>Rich in nutrients, potassium, fiber and vitamin C.</item>
+        <item>Contains calcium, iron, phosphorus, sodium, potassium, magnesium, and zinc</item>
+        <item>Helps to protect your heart, eyes, joints and brain</item>
+        <item>Excellent source of vitamin C</item>
+    </array>
+
+    <array name="detail">
+        <item>High amount of fiber, vitamin C, potassium and vitamin K. \n Reduce cholesterol
+            \n Get a healthier heart \n Decrease your risk of diabetes
+        </item>
+        <item>Rich in vitamins and minerals \n High Fibre Content
+            Ease in Digestion\n High Source Of Potassium \n Helps Fight Anaemia
+        </item>
+        <item>Rich in nutrients, potassium, fiber and vitamin C.
+            \n Helps Lower The Risk Of Colon Cancer \n Helps Improve Memory
+            \n Helps You Get A Good Nights Sleep
+        </item>
+        <item>Contains calcium, iron, phosphorus, sodium, potassium, magnesium, and zinc
+            \nMay Promote Brain Health \n Excellent Natural Sweetener
+            \n Cure Allergies \n Promote Weight Gain
+        </item>
+        <item>Helps to protect your heart, eyes, joints and brain \n Relieve Indigestion
+            \n Control Diabetes \n Balance Cholesterol Levels \n Prevent Cancer
+        </item>
+    </array>
 </resources>

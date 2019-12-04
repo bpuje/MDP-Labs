@@ -21,6 +21,8 @@ class MainActivity : AppCompatActivity() {
 
     var myArray = ArrayList<User>()
 
+    var productList = ArrayList<Product>()
+
     var input: EditText? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -29,6 +31,8 @@ class MainActivity : AppCompatActivity() {
 
         listApp()
         //printUser(1)
+
+        listProduct()
 
         editPassword.transformationMethod = HideReturnsTransformationMethod.getInstance()
         SignInBtn.text = "Hide"
@@ -47,6 +51,17 @@ class MainActivity : AppCompatActivity() {
         myArray.add(User("Stella", "Delgado", "stella@gmail.com", "123"))
         myArray.add(User("a", "a", "a", "a"))
     }
+
+
+
+    fun listProduct(){
+        productList.add(Product("MackBook Pro 2020", 2500.00, "Gray", R.drawable.macboook, "1", "This Macbook is release 2020."))
+        productList.add(Product("Galaxy Note 10", 1000.00, "Black", R.drawable.note10, "2", "This Samsung galaxy is released 2019."))
+        productList.add(Product("Lenova Tablet", 123.00, "Black", R.drawable.tablet, "3", "This Lenove tablet is released 2019."))
+        productList.add(Product("Samsung TV", 2300.00, "White", R.drawable.tv, "4", "This TV is released 2019."))
+        productList.add(Product("Epson printer", 300.00, "Black", R.drawable.printer, "5", "This Epson printer is released 2019."))
+    }
+
 
     fun setOnSingIn(view: View){
         var username: String?

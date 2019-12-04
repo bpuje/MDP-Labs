@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="edu.mum.cs473.walmartstore">
+    package="edu.mum.cs473.quizapp">
 
     <application
         android:allowBackup="true"
@@ -9,9 +9,6 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".ElectronActivity" />
-        <activity android:name=".RecyclerListViewActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,11 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ShoppingCategory" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".Pass_recovery" />
-        <activity android:name=".ClothingDetails" />
-        <activity android:name=".ClothingList" />
+        <activity android:name=".MainQuiz"></activity>
     </application>
 
 </manifest>

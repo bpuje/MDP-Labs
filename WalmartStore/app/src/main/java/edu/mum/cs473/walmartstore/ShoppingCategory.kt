@@ -47,6 +47,11 @@ class ShoppingCategory : AppCompatActivity(){
         startActivityForResult(intent1, 1)
     }
 
+    fun setOnClictElect(view: View){
+        val intent1 = Intent(this, ElectronActivity::class.java)
+        startActivity(intent1)
+    }
+
 //    fun setOnClickClothingImage(view: View){
 ////        Toast.makeText(this, "Welcome to electronics category. ", Toast.LENGTH_LONG).show()
 ////        val intent1 = Intent(this, ClothingList::class.java)
