@@ -12,30 +12,11 @@ class ShoppingCategory : AppCompatActivity(){
     var username : String? = ""
     var productList = ArrayList<Product>()
 
-//    var images = intArrayOf(R.drawable.coat,
-//        R.drawable.dress,
-//        R.drawable.pants,
-//        R.drawable.shirt,
-//        R.drawable.gutal,
-//        R.drawable.shorts,
-//        R.drawable.sweater,
-//        R.drawable.sweetshirt)
-//
-//    var clothes = arrayOf<String>("Dress", "Pants", "Shirt", "Shoes", "Shorts", "Sweater", "Sweetshirt")
 
     override fun onCreate(savedInstanceState: Bundle?){
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_shopping_category)
 
-
-//        val adapter = ArrayAdapter<String>(this@ShoppingCategory, android.R.layout.simple_spinner_dropdown_item, clothes)
-//        lview.adapter = adapter
-//        lview.onItemClickListener = AdapterView.OnItemClickListener{ parent, view, position, id ->
-//            val item = parent.getItemAtPosition(position).toString()
-//            val intent1 = Intent(applicationContext, ClothingDetails::class.java)
-//            intent1.putExtra("image", clothes[position])
-//            startActivity(intent1)
-//        }
 
         val intent1 = intent
         val output = intent1.getStringExtra("You have chosen the Clothing category of shopping")
