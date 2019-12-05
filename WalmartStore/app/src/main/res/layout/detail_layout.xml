@@ -18,33 +18,79 @@
         android:layout_marginLeft="0dp" />
 
     <TextView
-        android:id="@+id/name"
+        android:id="@+id/itemTitle"
         android:layout_width="340dp"
         android:layout_height="43dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginStart="28dp"
         android:layout_marginTop="205dp"
-        android:gravity="center"
+        android:gravity="left"
         android:textColor="#00F"
         android:textSize="30sp"
         android:text="TextView"
         android:layout_alignParentLeft="true"
         android:layout_marginLeft="28dp" />
 
+
+    <TextView
+    android:id="@+id/colorId"
+    android:layout_width="340dp"
+    android:layout_height="43dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="28dp"
+    android:layout_marginTop="275dp"
+    android:gravity="left"
+    android:textColor="#000000"
+    android:textSize="16sp"
+    android:text="Color :"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="28dp" />
+
+    <TextView
+        android:id="@+id/itemId"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="325dp"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="Item ID :"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp" />
+
+    <TextView
+        android:id="@+id/itemDesc"
+        android:layout_width="340dp"
+        android:layout_height="43dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="385dp"
+        android:gravity="left"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        android:text="Item Description :"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="28dp" />
+
     <TextView
         android:id="@+id/desc"
-        android:layout_width="354dp"
-        android:layout_height="239dp"
-        android:layout_alignParentBottom="true"
+        android:layout_width="340dp"
+        android:layout_height="243dp"
         android:layout_alignParentStart="true"
-        android:layout_marginBottom="10dp"
-        android:layout_marginStart="15dp"
-        android:background="@drawable/textview_border"
-        android:maxLines="5"
-        android:text="TextView"
-        android:textSize="16sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="405dp"
+        android:gravity="left"
         android:textColor="#000000"
+        android:textSize="16sp"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="15dp" />
+        android:layout_marginLeft="28dp" />
+
+
 </RelativeLayout>

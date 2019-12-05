@@ -11,13 +11,16 @@ class DetailActivity : AppCompatActivity() {
         setContentView(R.layout.detail_layout)
 
         // To avoid application crash check intent has data or not
-        if(intent.hasExtra("image") && intent.hasExtra("name")&& intent.hasExtra("detail")){
-            var ig =intent.getIntExtra("image",0)
-            var t1 = intent.getStringExtra("name")
-            var t2 = intent.getStringExtra("detail")
-            name.text = t1.toString()
-            desc.text = t2.toString()
-            imageView.setImageResource(ig)
+        if(intent.hasExtra("product")){
+            var prod =intent.getSerializableExtra("product") as Product
+
+            imageView.setImageResource(prod.image)
+            itemTitle.text = prod.title.toString()
+            colorId.text = "Color : "+ prod.color.toString()
+            itemId.text = "Wallmart #: " + prod.itemId.toString()
+            desc.text = prod.desc.toString()
+
+
         }
     }
 }

@@ -10,6 +10,7 @@ import kotlinx.android.synthetic.main.activity_shopping_category.*
 class ShoppingCategory : AppCompatActivity(){
 
     var username : String? = ""
+    var productList = ArrayList<Product>()
 
 //    var images = intArrayOf(R.drawable.coat,
 //        R.drawable.dress,
@@ -38,6 +39,7 @@ class ShoppingCategory : AppCompatActivity(){
 
         val intent1 = intent
         val output = intent1.getStringExtra("You have chosen the Clothing category of shopping")
+        productList =intent.getSerializableExtra("productList") as ArrayList<Product>
         txtWelcome.text = output
 
     }
@@ -49,8 +51,11 @@ class ShoppingCategory : AppCompatActivity(){
 
     fun setOnClictElect(view: View){
         val intent1 = Intent(this, ElectronActivity::class.java)
+        intent1.putExtra("productList", productList)
         startActivity(intent1)
     }
+
+
 
 //    fun setOnClickClothingImage(view: View){
 ////        Toast.makeText(this, "Welcome to electronics category. ", Toast.LENGTH_LONG).show()

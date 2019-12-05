@@ -11,23 +11,30 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 
-class MyAdapter(var context: Context,
-                var text1 :Array<String>,
-                var text2:Array<String>,
-                var img:IntArray,
-                var text3 : Array<String>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>(){
+class MyAdapter(
+                var context: Context,
+                var prodList : ArrayList<Product>) : RecyclerView.Adapter<MyAdapter.MyViewHolder>(){
+
+
+    class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+        var title: TextView = itemView.findViewById<TextView>(R.id.title)
+        var price: TextView = itemView.findViewById<TextView>(R.id.price)
+        var color: TextView = itemView.findViewById<TextView>(R.id.color)
+        var im : ImageView = itemView.findViewById<ImageView>(R.id.imageView)
+        var parentlayout : RelativeLayout = itemView.findViewById(R.id.playout) as RelativeLayout
+    }
+
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.im.setImageResource(img[position])
-        holder.t1.text = text1[position]
-        holder.t2.text = text2[position]
+        holder.im.setImageResource(prodList[position].image)
+        holder.title.text = prodList[position].title.toString()
+        holder.price.text = "Price : "+ prodList[position].price.toString()
+        holder.color.text = "Color : " + prodList[position].color.toString()
 
         holder.parentlayout.setOnClickListener {
             val intent = Intent(context, DetailActivity::class.java)
-            var res = text1[position]
+            var res = prodList[position]
             Toast.makeText(context," $res clicked", Toast.LENGTH_LONG).show()
-            intent.putExtra("image", img[position])
-            intent.putExtra("name", text1[position])
-            intent.putExtra("detail",text3[position])
+            intent.putExtra("product", prodList[position])
             context.startActivity(intent)
         }
     }
@@ -37,14 +44,9 @@ class MyAdapter(var context: Context,
         return MyViewHolder(v);
     }
     override fun getItemCount(): Int {
-        return text1.size
+        return prodList.size
     }
 
-    class MyViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
-        var t1: TextView = itemView.findViewById<TextView>(R.id.tv1)
-        var t2: TextView = itemView.findViewById<TextView>(R.id.tv2)
-        var im : ImageView = itemView.findViewById<ImageView>(R.id.imageView)
-        var parentlayout : RelativeLayout = itemView.findViewById(R.id.playout) as RelativeLayout
-    }
+
 
 }
